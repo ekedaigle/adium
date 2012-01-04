@@ -1116,6 +1116,7 @@
 		5A94397B1279ECB800FDD81D /* AIImgurImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A94397A1279ECB800FDD81D /* AIImgurImageUploader.m */; };
 		5A9A9F8911F2951400328DF9 /* AIDoNothingContactAlertPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9A9F8811F2951400328DF9 /* AIDoNothingContactAlertPlugin.m */; };
 		5A9A9F8B11F295EB00328DF9 /* Stop sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A9A9F8A11F295EB00328DF9 /* Stop sign.png */; };
+		5AA2A0EE14B3EFF500B4DB65 /* AIOSCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA2A0ED14B3EFF500B4DB65 /* AIOSCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ACF27391392C74A004B6AEF /* AIHighlightingTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ACF27351392C74A004B6AEF /* AIHighlightingTextField.h */; };
 		5ACF273A1392C74A004B6AEF /* AIHighlightingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF27361392C74A004B6AEF /* AIHighlightingTextField.m */; };
 		5ACF273B1392C74A004B6AEF /* AIPreferenceCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ACF27371392C74A004B6AEF /* AIPreferenceCollectionView.h */; };
@@ -1443,6 +1444,8 @@
 		9718DF46136A2C5200013760 /* AIImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9718DF44136A2C5200013760 /* AIImageCollectionView.m */; };
 		9722ABC813257D7F00CAB486 /* ContactListWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722ABC713257D7F00CAB486 /* ContactListWindow.xib */; };
 		9760D24613E49A560031FA1A /* AboutDialog_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9760D24513E49A560031FA1A /* AboutDialog_bg.png */; };
+		9779184814A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9779184614A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.h */; };
+		9779184914A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9779184714A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.m */; };
 		97AF5CDB13191DE200550C41 /* AIContactListUserPictureMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF5CDA13191DE200550C41 /* AIContactListUserPictureMenuController.m */; };
 		97AF5CF413191E9A00550C41 /* ContactListChangeUserPictureMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AF5CF313191E9A00550C41 /* ContactListChangeUserPictureMenu.xib */; };
 		97E4B4FF13E7490000A8BA53 /* AboutDialog_transp_btm.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E4B4FB13E7490000A8BA53 /* AboutDialog_transp_btm.png */; };
@@ -4006,6 +4009,7 @@
 		5A9A9F8711F2951400328DF9 /* AIDoNothingContactAlertPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDoNothingContactAlertPlugin.h; sourceTree = "<group>"; };
 		5A9A9F8811F2951400328DF9 /* AIDoNothingContactAlertPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDoNothingContactAlertPlugin.m; sourceTree = "<group>"; };
 		5A9A9F8A11F295EB00328DF9 /* Stop sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stop sign.png"; path = "Resources/Stop sign.png"; sourceTree = SOURCE_ROOT; };
+		5AA2A0ED14B3EFF500B4DB65 /* AIOSCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIOSCompatibility.h; path = "Frameworks/AIUtilities Framework/Source/AIOSCompatibility.h"; sourceTree = "<group>"; };
 		5AC7F26313B42952002D7265 /* Preferences-AddressBookIntegration.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Preferences-AddressBookIntegration.xib"; path = "Resources/Preferences-AddressBookIntegration.xib"; sourceTree = "<group>"; };
 		5AC7F26513B42A55002D7265 /* Preferences-Encryption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Preferences-Encryption.xib"; path = "Resources/Preferences-Encryption.xib"; sourceTree = "<group>"; };
 		5AC7F26713B43612002D7265 /* Preferences-MessageAlerts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Preferences-MessageAlerts.xib"; path = "Resources/Preferences-MessageAlerts.xib"; sourceTree = "<group>"; };
@@ -4265,8 +4269,8 @@
 		633D51120F9D31BD004F491E /* pt_PT */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/schema.strings; sourceTree = "<group>"; };
 		633D51130F9D31BD004F491E /* ru */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		633D51140F9D31BD004F491E /* ru */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/schema.strings; sourceTree = "<group>"; };
-		633D51160F9D31BD004F491E /* sl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		633D51170F9D31BD004F491E /* sl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/schema.strings; sourceTree = "<group>"; };
+		633D51160F9D31BD004F491E /* sl */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		633D51170F9D31BD004F491E /* sl */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/schema.strings; sourceTree = "<group>"; };
 		633D51180F9D31BD004F491E /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		633D51190F9D31BD004F491E /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/schema.strings; sourceTree = "<group>"; };
 		633D511A0F9D31BD004F491E /* tr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -4317,7 +4321,7 @@
 		63A3A9850F9C35D3006C9CB0 /* pt_PT */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/Localizable.strings; sourceTree = "<group>"; };
 		63A3A9860F9C35D3006C9CB0 /* pt */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		63A3A9870F9C35D3006C9CB0 /* ru */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		63A3A9880F9C35D3006C9CB0 /* sl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63A3A9880F9C35D3006C9CB0 /* sl */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		63A3A9890F9C35D3006C9CB0 /* sv */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		63A3A98A0F9C35D3006C9CB0 /* tr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		63A3A98B0F9C35D3006C9CB0 /* zh_CN */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -4469,6 +4473,8 @@
 		9718DF44136A2C5200013760 /* AIImageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIImageCollectionView.m; path = "Frameworks/AIUtilities Framework/Source/AIImageCollectionView.m"; sourceTree = "<group>"; };
 		9722ABC713257D7F00CAB486 /* ContactListWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ContactListWindow.xib; path = Resources/ContactListWindow.xib; sourceTree = "<group>"; };
 		9760D24513E49A560031FA1A /* AboutDialog_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AboutDialog_bg.png; path = Resources/AboutDialog_bg.png; sourceTree = "<group>"; };
+		9779184614A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBoolToControlTextColorTransformer.h; sourceTree = "<group>"; };
+		9779184714A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBoolToControlTextColorTransformer.m; sourceTree = "<group>"; };
 		97AF5CD913191DE200550C41 /* AIContactListUserPictureMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIContactListUserPictureMenuController.h; path = Source/AIContactListUserPictureMenuController.h; sourceTree = "<group>"; };
 		97AF5CDA13191DE200550C41 /* AIContactListUserPictureMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIContactListUserPictureMenuController.m; path = Source/AIContactListUserPictureMenuController.m; sourceTree = "<group>"; };
 		97AF5CF313191E9A00550C41 /* ContactListChangeUserPictureMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ContactListChangeUserPictureMenu.xib; path = Resources/ContactListChangeUserPictureMenu.xib; sourceTree = "<group>"; };
@@ -5467,6 +5473,8 @@
 		3448055407AC5203006A7F7B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9779184614A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.h */,
+				9779184714A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.m */,
 				347933F10C861017007ADCAA /* AIColorStringTransformer.h */,
 				347933F20C861017007ADCAA /* AIColorStringTransformer.m */,
 				340BA84409EC593A000EC441 /* AICorePluginLoader.h */,
@@ -7351,6 +7359,7 @@
 				6334FF050F9C14BF003C77A9 /* Fun New Classes */,
 				6334FF020F9C14BF003C77A9 /* Functions */,
 				7E959ACF10E3187000C26397 /* AIMathCompatibility.h */,
+				5AA2A0ED14B3EFF500B4DB65 /* AIOSCompatibility.h */,
 			);
 			name = AIUtilities;
 			sourceTree = "<group>";
@@ -8969,6 +8978,7 @@
 				112B47670F82E0FC00690E84 /* AIXtraInfo.h in Headers */,
 				34F17FCE0F8EAC34009C5A39 /* AIListOutlineView+Drawing.h in Headers */,
 				63B0EC9D0F8FBB660062476B /* AIProxyListObject.h in Headers */,
+				9779184814A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9070,6 +9080,7 @@
 				9718DF45136A2C5200013760 /* AIImageCollectionView.h in Headers */,
 				5ACF27391392C74A004B6AEF /* AIHighlightingTextField.h in Headers */,
 				5ACF273B1392C74A004B6AEF /* AIPreferenceCollectionView.h in Headers */,
+				5AA2A0EE14B3EFF500B4DB65 /* AIOSCompatibility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -10439,6 +10450,7 @@
 				112B47680F82E0FC00690E84 /* AIXtraInfo.m in Sources */,
 				34F17FCF0F8EAC34009C5A39 /* AIListOutlineView+Drawing.m in Sources */,
 				63B0EC9C0F8FBB660062476B /* AIProxyListObject.m in Sources */,
+				9779184914A14E9F00FAAC33 /* AIBoolToControlTextColorTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

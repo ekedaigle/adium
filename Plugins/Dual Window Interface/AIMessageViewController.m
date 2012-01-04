@@ -32,6 +32,7 @@
 
 #import <AIUtilities/AIAttributedStringAdditions.h>
 #import <AIUtilities/AIDictionaryAdditions.h>
+#import <AIUtilities/AIOSCompatibility.h>
 
 #import <PSMTabBarControl/NSBezierPath_AMShading.h>
 
@@ -779,8 +780,9 @@
 	
 	//User's choice of mininum height for their text entry view
 	entryMinHeight = [[adium.preferenceController preferenceForKey:KEY_ENTRY_TEXTVIEW_MIN_HEIGHT
-															   group:PREF_GROUP_DUAL_WINDOW_INTERFACE] doubleValue];
-	if (entryMinHeight <= 0) entryMinHeight = AIfloor([self _textEntryViewProperHeightIgnoringUserMininum:YES] + 0.5f);
+															 group:PREF_GROUP_DUAL_WINDOW_INTERFACE] doubleValue];
+	if (entryMinHeight <= 0)
+		entryMinHeight = ENTRY_TEXTVIEW_MIN_HEIGHT;
 	
 	//Associate the view with our message view so it knows which view to scroll in response to page up/down
 	//and other special key-presses.
@@ -1274,13 +1276,13 @@
 - (CGFloat)_userListViewDividerPositionIgnoringUserMinimum:(BOOL)ignoreUserMinimum
 {
 	CGFloat splitViewWidth = splitView_verticalSplit.frame.size.width;
-	CGFloat allowedWidth = (splitViewWidth / 2) - [splitView_verticalSplit dividerThickness];
+	CGFloat allowedWidth = AIfloor(splitViewWidth / 2) - [splitView_verticalSplit dividerThickness];
 	CGFloat width = ignoreUserMinimum ? USER_LIST_DEFAULT_WIDTH : userListMinWidth;
 	
+	if (width < USER_LIST_DEFAULT_WIDTH)
+		width = USER_LIST_DEFAULT_WIDTH;
 	if (width > allowedWidth)
 		width = allowedWidth;
-	else if (width < USER_LIST_DEFAULT_WIDTH)
-		width = USER_LIST_DEFAULT_WIDTH;
 	
 	if (userListOnRight)
 		return splitViewWidth - width;
