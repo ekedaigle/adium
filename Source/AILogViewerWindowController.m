@@ -1569,6 +1569,11 @@ NSArray *pathComponentsForDocument(SKDocumentRef inDocument)
     Boolean			more = true;
     unsigned long			totalCount = 0;
 	
+	if (!logSearchIndex) {
+		AILogWithSignature(@"Got a NULL logSearchIndex. This shouldn't happen!");
+		return;
+	}
+	
 	[currentSearchLock lock];
 	if (currentSearch) {
 		SKSearchCancel(currentSearch);
@@ -1718,6 +1723,7 @@ NSArray *pathComponentsForDocument(SKDocumentRef inDocument)
 	[currentSearchLock unlock];
 	
 	if (thisSearch) CFRelease(thisSearch);
+	if (logSearchIndex) CFRelease(logSearchIndex);
 }
 
 //Search the logs, filtering out any matching logs into the currentSearchResults
