@@ -96,7 +96,7 @@
 		[self chatParticipatingListObjectsChanged:nil];
 		
 		//Set our contents
-		[self setView:[messageViewController view]];
+		[self setView:[[messageViewController view] retain]];
 	}
     return self;
 }

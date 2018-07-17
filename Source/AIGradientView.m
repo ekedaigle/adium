@@ -29,7 +29,7 @@
 - (id)initWithFrame:(NSRect)frame
 {
 	if ((self = [super initWithFrame:frame])) {
-		backgroundColor = [NSColor colorWithCalibratedWhite:1.0f alpha:1.0f];
+		self.backgroundColor = [NSColor colorWithCalibratedWhite:1.0f alpha:1.0f];
 		startingColor = nil;
 		middleColor = nil;
 		endingColor = nil;
