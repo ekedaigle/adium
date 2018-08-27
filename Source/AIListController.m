@@ -85,6 +85,9 @@
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadListObject:)
 										   name:Contact_OrderChanged 
 										 object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadListObject:)
+													 name:ListObject_StatusChanged
+												   object:nil];
 		
 		[contactListView addObserver:self
 						  forKeyPath:@"desiredHeight" 
@@ -425,6 +428,11 @@
 - (void)reloadListObject:(NSNotification *)notification
 {
 	AIListObject *object = notification.object;
+	
+	if ([notification.name isEqualToString:@"ListObject_StatusChanged"]) {
+		[contactListView reloadData];
+		return;
+	}
 	
 	//Treat a nil object as equivalent to the whole contact list
 	if (!object || (object == (AIListObject *)contactList)) {
