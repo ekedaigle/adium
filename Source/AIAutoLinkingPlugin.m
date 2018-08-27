@@ -54,7 +54,7 @@
 
 	if([AHHyperlinkScanner isStringValidURI:[replacementMessage string] usingStrict:YES fromIndex:NULL withStatus:NULL schemeLength:NULL]){
 		NSString *linkString = (NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-													(CFStringRef)[replacementMessage string],
+																				   (CFStringRef)[[replacementMessage string] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]],
 													(CFStringRef)@"#%",
 													NULL,
 													kCFStringEncodingUTF8);
