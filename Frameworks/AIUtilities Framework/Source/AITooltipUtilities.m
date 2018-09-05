@@ -272,6 +272,7 @@ static	AITooltipOrientation	tooltipOrientation;
 	[textStorage_tooltipBody release]; textStorage_tooltipBody = nil;
 	[textStorage_tooltipTitle release]; textStorage_tooltipTitle = nil;
     [view_tooltipImage release];     view_tooltipImage = nil;
+	[tooltipWindow close];
     [tooltipWindow release];         tooltipWindow = nil;
     [tooltipBody release];           tooltipBody = nil;
     [tooltipTitle release];          tooltipTitle = nil;
